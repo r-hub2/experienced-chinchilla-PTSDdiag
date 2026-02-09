@@ -1,0 +1,45 @@
+Package: PTSDdiag
+Type: Package
+Title: Optimize PTSD Diagnostic Criteria Using PCL-5 Data
+Version: 0.1.0
+Authors@R: c(
+    person(
+      "Laura", "Weidmann",
+      role = c("aut")
+    ),
+    person(
+      "Tobias R.", "Spiller",
+      email = "tobias.spiller@access.uzh.ch",
+      role = c("aut", "cre")
+    ),
+    person(
+      "Flavio A.", "Schüepp",
+      role = c("aut")
+    )
+  )
+Description: Provides tools for analyzing and optimizing PTSD (Post-Traumatic
+    Stress Disorder) diagnostic criteria using PCL-5 (PTSD Checklist for DSM-5)
+    data. Functions identify optimal subsets of PCL-5 items that maintain
+    diagnostic accuracy while reducing assessment burden. Includes tools for
+    both hierarchical (cluster-based) and non-hierarchical symptom combinations,
+    calculation of diagnostic metrics, and comparison with standard DSM-5
+    criteria. Model validation is conducted using holdout and cross-validation
+    methods to assess robustness and generalizability of the results. For more
+    details see Weidmann et al. (2025) <doi:10.31219/osf.io/6rk72_v1>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
+Imports: dplyr, magrittr, rlang, stats, utils, modelr
+Depends: R (>= 3.5.0)
+Suggests: DT, knitr, lattice, psych, rmarkdown, testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://github.com/WeidmannL/PTSDdiag
+BugReports: https://github.com/WeidmannL/PTSDdiag/issues
+NeedsCompilation: no
+Packaged: 2026-02-09 06:33:34 UTC; trs
+Author: Laura Weidmann [aut],
+  Tobias R. Spiller [aut, cre],
+  Flavio A. Schüepp [aut]
+Maintainer: Tobias R. Spiller <tobias.spiller@access.uzh.ch>
